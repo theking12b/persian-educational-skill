@@ -1,0 +1,6 @@
+interface:
+  display_name: "Educational Handout Designer"
+  short_description: "Design reference-language handouts with Persian RTL support"
+  default_prompt: "Use $persian-educational-designer to turn these lecture slides into a teaching handout in the reference handout's language."
+policy:
+  allow_implicit_invocation: true

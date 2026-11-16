@@ -1,0 +1,39 @@
+@font-face { font-family:Vazirmatn; src:url("fonts/Vazirmatn-Regular.woff2") format("woff2"); font-weight:400; font-style:normal; }
+@font-face { font-family:Vazirmatn; src:url("fonts/Vazirmatn-Bold.woff2") format("woff2"); font-weight:700; font-style:normal; }
+/* Limit the tabular face to ASCII digits so adjacent Persian keeps its own font. */
+@font-face { font-family:TableDigits; src:local("Consolas"),local("DejaVu Sans Mono"),local("Courier New"); font-weight:400; unicode-range:U+0030-0039; }
+@font-face { font-family:TableDigits; src:local("Consolas Bold"),local("DejaVu Sans Mono Bold"),local("Courier New Bold"); font-weight:700; unicode-range:U+0030-0039; }
+@page { size:A4; margin:19mm 16mm 18mm; }
+:root { --ink:#1b2934; --teal:#096761; --rule:#c7d8d5; --panel-radius:2.5mm; }
+* { box-sizing:border-box; }
+body { max-width:178mm; margin:0 auto; color:var(--ink); font:11.2pt/1.8 system-ui,sans-serif; }
+header { padding:0 0 3mm; border-bottom:1.5pt solid var(--teal); }
+.kicker,figcaption,caption { color:#45605e; font-size:9pt; }
+h1,h2,h3 { line-height:1.5; break-after:avoid; color:var(--teal); }
+h1 { font-size:23pt; margin:1mm 0; }
+h2 { font-size:16pt; margin:6mm 0 2mm; border-bottom:.7pt solid var(--teal); }
+h3 { font-size:13pt; margin:4mm 0 1mm; }
+p { margin:1.7mm 0; orphans:3; widows:3; }
+aside,figure { margin:3mm 0; break-inside:avoid; }
+aside, .panel { border-radius:var(--panel-radius); }
+aside { padding:2.5mm 4mm; border-inline-start:2.5pt solid #507eb0; background:#eef4fa; }
+.example { border-color:#39845a; background:#edf6ef; }
+.condition { border-color:#ab7519; background:#fcf4e3; }
+.error { border-color:#aa4542; background:#faefed; }
+table { width:100%; border-collapse:separate; border-spacing:0; border:.5pt solid var(--rule); margin:3mm 0; font-size:10pt; }
+thead { display:table-header-group; } tr { break-inside:avoid; }
+th,td { padding:1.4mm 2mm; border:0; border-inline-end:.5pt solid var(--rule); border-block-end:.5pt solid var(--rule); text-align:start; }
+th:last-child,td:last-child { border-inline-end:0; }
+table > :is(tbody,tfoot):last-child > tr:last-child > * { border-block-end:0; }
+
+html:lang(fa) :is(td,th) { font-family:TableDigits,Vazirmatn,sans-serif; font-variant-numeric:tabular-nums; }
+.panel { border:0.65pt solid var(--rule); }
+th { background:#e6f1ef; }
+img,svg { max-width:100%; height:auto; } figcaption,caption { padding:1mm 0; }
+bdi,code,math,pre,.ltr { direction:ltr; unicode-bidi:isolate; }
+pre,.equation { text-align:center; direction:ltr; } pre { white-space:pre-wrap; text-align:left; font:10pt/1.5 Consolas,monospace; }
+@media print { * { print-color-adjust:exact; } }
+
+html:lang(fa) body { font-family:Vazirmatn, sans-serif; font-size:11.6pt; }
+
+html:lang(fa) ol:not([type]) { list-style-type:persian; }
