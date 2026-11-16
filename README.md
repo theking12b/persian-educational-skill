@@ -1,4 +1,4 @@
-# Persian Educational Designer | طراح جزوهٔ آموزشی فارسی
+# Persian Educational Skill | طراح جزوهٔ آموزشی فارسی
 
 A global Codex skill for turning lecture slides and academic PDFs into illustrated, print-ready A4 handouts. It follows the language of your reference handout and includes dedicated Persian typesetting.
 
@@ -50,7 +50,7 @@ Windows · PowerShell
 
 ```powershell
 $skill = Join-Path $env:USERPROFILE '.agents/skills/persian-educational-designer'
-git clone https://github.com/theking12b/persian-educational-designer.git "$skill"
+git clone https://github.com/theking12b/persian-educational-skill.git "$skill"
 py -3 -m venv "$skill/.venv"
 $python = Join-Path $skill '.venv/Scripts/python.exe'
 & $python -m pip install -r "$skill/requirements.txt"
@@ -63,7 +63,7 @@ macOS / Linux · Terminal
 
 ```sh
 skill="$HOME/.agents/skills/persian-educational-designer"
-git clone https://github.com/theking12b/persian-educational-designer.git "$skill"
+git clone https://github.com/theking12b/persian-educational-skill.git "$skill"
 python3 -m venv "$skill/.venv"
 python_bin="$skill/.venv/bin/python"
 "$python_bin" -m pip install -r "$skill/requirements.txt"
