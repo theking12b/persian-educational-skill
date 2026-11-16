@@ -28,11 +28,11 @@ The left image is page 4 of `study_guide.pdf`. The right image teaches a selecti
 
 ## Installation | نصب سراسری
 
-You need Codex, Git, Python 3.10+ and Poppler. Clone the repository under your user account so Codex can discover the skill across projects. While the repository is private, use a GitHub account with access. If the skill was already installed at this location, skip the clone step.
+You need Codex, Git, Python 3.10+ and Poppler. Clone the repository under your user account so Codex can discover the skill across projects. If the skill was already installed at this location, skip the clone step.
 
 <div dir="rtl">
 
-برای نصب به Codex، گیت، پایتون نسخهٔ ۳٫۱۰ یا بالاتر و Poppler نیاز دارید. فرمان‌های مربوط به سیستم‌عامل خود را اجرا کنید. مسیر نصب زیر حساب کاربر شماست و Skill در پروژه‌های مختلف قابل فراخوانی است. برای دریافت مخزن خصوصی، حساب گیت‌هاب شما باید دسترسی داشته باشد. اگر Skill از قبل در همین مسیر نصب شده، مرحلهٔ کلون را رد کنید.
+برای نصب به Codex، گیت، پایتون نسخهٔ ۳٫۱۰ یا بالاتر و Poppler نیاز دارید. فرمان‌های مربوط به سیستم‌عامل خود را اجرا کنید. مسیر نصب زیر حساب کاربر شماست و Skill در پروژه‌های مختلف قابل فراخوانی است. اگر Skill از قبل در همین مسیر نصب شده، مرحلهٔ کلون را رد کنید.
 
 </div>
 
