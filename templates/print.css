@@ -37,3 +37,6 @@ pre,.equation { text-align:center; direction:ltr; } pre { white-space:pre-wrap; 
 html:lang(fa) body { font-family:Vazirmatn, sans-serif; font-size:11.6pt; }
 
 html:lang(fa) ol:not([type]) { list-style-type:persian; }
+
+math { font-family:"Cambria Math","STIX Two Math","Latin Modern Math",math; }
+math mfrac { math-style:normal; }
